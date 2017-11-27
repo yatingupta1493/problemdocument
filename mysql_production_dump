@@ -1,0 +1,9 @@
+mysqldump -uusername -ppassword -hhostname --single-transaction --routines --triggers dbname > dbname.sql
+
+--single-transaction produces a checkpoint that allows the dump to capture all data prior to the checkpoint while receiving incoming changes. Those incoming changes do not become part of the dump. That ensures the same point-in-time for all tables.
+
+For MyISAM there is --lock-tables.
+
+--routines dumps all stored procedures and stored functions
+
+--triggers dumps all triggers for each table that has them

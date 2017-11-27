@@ -1,0 +1,12 @@
+It depend on extent your files get uninstalled. 
+
+Never use apt-get remove python on ubuntu
+
+But if it was not so much, then 
+
+sudo apt-get install --reinstall python2.7
+apt-get -f install
+sudo apt-get install --reinstall python2.7
+sudo apt-get update
+sudo apt-get install --reinstall ubuntu-desktop
+sudo apt-get install python3-pip (install latest pip)
